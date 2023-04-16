@@ -410,6 +410,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 3px;
+    padding-bottom: 10px;
 }
 
 .aside-title a{
