@@ -100,9 +100,47 @@ searchOverlay1.addEventListener("click", function(event) {
 });
 
 
+function initSwiper() {
+    var swiper2 = new Swiper("#mySwiper2", {
+
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            900: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-btn-next',
+            prevEl: '.swiper-btn-prev',
+        },
+    });
+}
+
+window.addEventListener('load', initSwiper);
 
 
-var swiper = new Swiper(".mySwiper", {
+
+
+var swiper = new Swiper("#mySwiper1", {
     slidesPerView: 1,
     spaceBetween: 10,
     pagination: {
