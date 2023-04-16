@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/483098203b.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>My website - Libero</title>
+    </head>
+
+<!-- Aggiungi: freccete nei contenuti, la barra sticky, valuta se fare quella cosa con
+Javascript di aprire quella finestra, dai alt alle immagini-->
+
+<body>
+    <!-- Search bar-->
+<div id="search-bar" class="flex-container1">
+    <div class="search-icon-lg">
+
+        <button id="search-button">
+            <i class="fa-solid fa-magnifying-glass fa-2xs"  ></i>
+            Cerca
+        </button>
+
+        <div id="search-overlay">
+            <button id="search-close"><i class="fa fa-times" ></i></button>
+            <form>
+                <label>
+                    <input type="text" placeholder="Cerca in Libero Quotidiano">
+                </label>
+                <i class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i>
+            </form>
+        </div>
+    </div>
+
+    <div class="action-wrapper">
+        <a href="#" style="color: black"> <i class="fa-brands fa-facebook-f fa-xs" style="margin-right: 7px">  </i> </a>
+        <a href="#" style="color: black"> <i class="fa-brands fa-twitter fa-xs" style="margin-right: 7px">  </i> </a>
+        <a href="#" style="color: black"> <i class="fa-brands fa-instagram fa-xs" style="margin-right: 7px"></i> </a>
+    </div>
+</div>
+
+
+
+    <!-- Header-->
+<div id="header" class="flex-container2" >
+    <div class="left-nav-logo">
+
+        <div id="hamburgerMenu" class="nav-bar-sm-md" style="margin-right: 10px;">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="background-color: rgb(43, 84, 126);">
+                <i class="fa-solid fa-bars" ></i>
+            </button>
+
+            <div class="offcanvas offcanvas-start -" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" >
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">
+                        <img src="logo.svg" alt=img1" style="width: 60px; height:30px;">
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                    <a class="offcanvas-link" href="#" > HOME </a>
+                    <a class="offcanvas-link" href="#" >POLITICA </a>
+                    <a class="offcanvas-link" href="#">GIUSTIZIA</a>
+                    <a class="offcanvas-link" href="#">ITALIA</a>
+                    <a class="offcanvas-link" href="#">EUROPA</a>
+                    <a class="offcanvas-link" href="#">TERRA PROMESSA</a>
+                    <a class="offcanvas-link" href="#">ESTERI</a>
+                    <a class="offcanvas-link" href="#">SPORT</a>
+                    <a class="offcanvas-link" href="#">BLOG</a>
+                    <a class="offcanvas-link" href="#">PODCAST</a>
+                    <a class="offcanvas-link" href="#">PIULIBERO</a>
+                </div>
+            </div>
+        </div>
+
+        <div> <img src="logo.svg" id="logo-libero" alt="logo di Libero" class="logo" ></div>
+    </div>
+    <div  class="right-links">
+        <a class="flex-container-link" id="link1"href="#"> #25Aprile</a>
+        <a class="flex-container-link" id="link2"href="#"> #EmergenzaMigranti</a>
+        <a class="flex-container-link" id="link3" href="#"> #PiùLibero</a>
+    </div>
+
+    <!--Search bar mobile only-->
+    <div id="search-icon" class="search-icon-md">
+        <button id="search-button1">
+            <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #ffffff;"></i>
+        </button>
+
+        <div id="search-overlay1">
+            <button id="search-close1"><i class="fa fa-times" ></i></button>
+            <form>
+                <input type="text" placeholder="Cerca in Libero Quotidiano">
+                <i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #ffffff;"></i>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+    <!--Navbar -->
+<div class="flex-container3">
+    <nav class="navbar-lg">
+        <a class="nav-link" href="#" > HOME </a>
+        <a class="nav-link" href="#" >POLITICA </a>
+        <a class="nav-link" href="#">GIUSTIZIA</a>
+        <a class="nav-link" href="#">ITALIA</a>
+        <a class="nav-link" href="#">EUROPA</a>
+        <a class="nav-link" href="#">TERRA PROMESSA</a>
+        <a class="nav-link" href="#">ESTERI</a>
+        <a class="nav-link" href="#">SPORT</a>
+        <a class="nav-link" href="#">BLOG</a>
+        <a class="nav-link" href="#">PODCAST</a>
+        <a class="nav-link" href="#">PIULIBERO</a>
+    </nav>
+    <div class="liberotv-lg">
+        <a href="#"><i class="fa-solid fa-tv">  </i></a>
+        <a href="#"> Libero tv </a>
+        <a href="#"><i class="fa-regular fa-newspaper">  </i></a>
+        <a href="#"> Edicola Digitale </a>
+    </div>
+</div>
+
+    <!-- Libero tv e edicola digitale (da md) -->
+<div class="liberotv-md">
+    <a href="#"><i class="fa-solid fa-tv">  </i></a>
+    <a href="#"> Libero tv </a>
+    <a href="#"><i class="fa-regular fa-newspaper">  </i></a>
+    <a href="#"> Edicola Digitale </a>
+</div>
+
+    <!-- Link che erano sulla destra nell'header vanno sotto sulla sinistra (da md) -->
+ <div class="left-links-md">
+     <a href="#"> #25Aprile</a>
+     <a href="#"> #EmergenzaMigranti</a>
+     <a href="#"> #PiùLibero</a>
+ </div>
+
+    <!-- Contenuti-->
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-12 col-lg-8">  <!-- Main: notizie a sinistra-->
+
+            <div class="main-article" style="border: none;">
+
+                <img src="https://picsum.photos/683/365" alt=img" class="img-fluid" style="width: 100%">
+                <!--
+                <div class="container">
+                    <img src="https://picsum.photos/683/365" class="img-fluid">
+                    <div class="top-left" > ULTIM'ORA</div>
+                </div>
+                -->
+                <br>
+                <div class="overtitle" style=" margin-top: 15px; margin-bottom: 0px">
+                    <a href="#"> <i class="fa-solid fa-square"></i>
+                            Ex rerum eius
+                    </a>
+                    <a href="#">
+                            <i class="fa-solid fa-share fa-sm" style="color: #9D0000; "></i>
+                    </a>
+                </div>
+
+                <div class="title">
+                    <a href="#">
+                        Lorem ipsum dolor sit amet!
+                    </a>
+                </div>
+
+            </div>
+            <div class="main-article" >
+                <div class="overtitle">
+                    <a href="#" style="color: #1887E4">
+                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                        Est suscipit
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                    </a>
+                </div>
+                <div class="title">
+                    <a href="#">
+                        Ad incidunt dolorem At quia unde id fugiat corporis ut error earum sed neque molestiae sit itaque saepe?
+                    </a>
+                </div>
+
+                <div class="subtitle">
+                    <img src="icon-play.png" alt="icon-play" style="width: 20px; height: 20px;">
+                    <a href="#"> Non architecto dolore et laborum possimus</a>
+                    <br>
+                    <img src="icon-play.png" alt="icon-play" style="width: 20px; height: 20px;">
+                    <a href="#"> Vel incidunt consequatur et dolores laudantium</a>
+                </div>
+                <img src="https://picsum.photos/683/366" alt=img" class="img-fluid" style="width: 100%">
+
+
+            </div>
+            <!--Carousel con articoli, da md-->
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="filter: invert(100%);">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+                </div>
+                <div id="carousel-mobile-only" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" style="filter: invert(100%);">
+                        <li data-target="#carousel-mobile-only" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-mobile-only" data-slide-to="1"></li>
+                        <li data-target="#carousel-mobile-only" data-slide-to="2"></li>
+                        <li data-target="#carousel-mobile-only" data-slide-to="3"></li>
+                        <li data-target="#carousel-mobile-only" data-slide-to="4"></li>
+                        <li data-target="#carousel-mobile-only" data-slide-to="5"></li>
+
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="aside-article" style="margin-left: 40px; margin-right: 40px;">
+                                <div class="aside-overtitle" style="text-align: left">
+                                    <a href="#" style="color: #1887E4">
+                                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                        Et odit ipsum
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                                    </a>
+                                </div>
+                                <img src="https://picsum.photos/311/174" alt=img" class="img-fluid" style="width: 100%">
+                                <div class="aside-title">
+                                    <a href="#">
+                                        Aut nihil dolorem aut quasi alias rem quaerat
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aside-article" style="margin-left: 40px; margin-right: 40px;">
+                                <div class="aside-overtitle" style="text-align: left">
+                                    <a href="#" style="color: #1887E4">
+                                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                        Eum quidem corrupti
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                                    </a>
+                                </div>
+
+                                <img src="https://picsum.photos/311/178" alt=img" class="img-fluid" style="width: 100%">
+
+                                <div class="aside-title">
+                                    <a href="#">
+                                        Et odit ipsum ut atque deleniti ut harum fuga et molestiae
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aside-article" style="margin-left: 40px; margin-right: 40px;" >
+                                <div class="aside-overtitle" style="text-align: left">
+                                    <a href="#" style="color: #1887E4">
+                                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                        Ut placeat
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                                    </a>
+                                </div>
+
+                                <img src="https://picsum.photos/311/173" alt=img" class="img-fluid" style="width: 100%">
+
+                                <div class="aside-title">
+                                    <a href="#">
+                                        Est voluptas ducimus et velit iste quo expedita
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aside-article" style="margin-left: 40px; margin-right: 40px;">
+                                <div class="aside-overtitle" style="text-align: left">
+                                    <a href="#" style="color: #1887E4">
+                                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                        Voluptatum harum
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                                    </a>
+                                </div>
+
+                                <img src="https://picsum.photos/311/175" alt=img" class="img-fluid" style="width: 100%">
+
+                                <div class="aside-title">
+                                    <a href="#">
+                                        33 obcaecati enim et facilis labore est voluptas consequatur
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aside-article" style="margin-left: 40px; margin-right: 40px;">
+                                <div class="aside-overtitle" style="text-align: left">
+                                    <a href="#" style="color: #1887E4">
+                                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                        Et adipisci eveniet
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                                    </a>
+                                </div>
+
+                                <img src="https://picsum.photos/311/169" alt=img" class="img-fluid" style="width: 100%">
+
+                                <div class="aside-title">
+                                    <a href="#">
+                                        Eum aliquam error cum facere natus qui dolores nulla
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="aside-article" style="margin-left: 40px; margin-right: 40px;">
+                                <div class="aside-overtitle" style="text-align: left">
+                                    <a href="#" style="color: #1887E4">
+                                        <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                        Ut ipsa quaerat est
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                                    </a>
+                                </div>
+
+                                <img src="https://picsum.photos/311/168" alt=img" class="img-fluid" style="width: 100%">
+
+                                <div class="aside-title">
+                                    <a href="#">
+                                        Est autem quibusdam aut labore praesentium ex dolore omnis
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators2">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-bs-slide="next" data-bs-target="#carouselExampleIndicators2">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="row" id="row1">
+                <div class="col-md-6">
+                    <div class="aside-article">
+                        <div class="aside-overtitle">
+                            <a href="#" style="color: #1887E4">
+                                <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                Et odit ipsum
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                            </a>
+                        </div>
+                        <img src="https://picsum.photos/311/174" alt=img" class="img-fluid" style="width: 100%">
+                        <div class="aside-title">
+                            <a href="#">
+                                Aut nihil dolorem aut quasi alias rem quaerat
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="aside-article">
+                        <div class="aside-overtitle">
+                            <a href="#" style="color: #1887E4">
+                                <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                Eum quidem corrupti
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/178" alt=img" class="img-fluid" style="width: 100%">
+
+                        <div class="aside-title">
+                            <a href="#">
+                                Et odit ipsum ut atque deleniti ut harum fuga et molestiae
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="col-md-6">
+                    <div class="aside-article">
+                        <div class="aside-overtitle">
+                            <a href="#" style="color: #1887E4">
+                                <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                Ut placeat
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/173" alt=img" class="img-fluid" style="width: 100%">
+
+                        <div class="aside-title">
+                            <a href="#">
+                                Est voluptas ducimus et velit iste quo expedita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="aside-article">
+                        <div class="aside-overtitle">
+                            <a href="#" style="color: #1887E4">
+                                <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                Voluptatum harum
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/175" alt=img" class="img-fluid" style="width: 100%">
+
+                        <div class="aside-title">
+                            <a href="#">
+                                33 obcaecati enim et facilis labore est voluptas consequatur
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row3">
+                <div class="col-md-6">
+                    <div class="aside-article">
+                        <div class="aside-overtitle">
+                            <a href="#" style="color: #1887E4">
+                                <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                Et adipisci eveniet
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/169" alt=img" class="img-fluid" style="width: 100%">
+
+                        <div class="aside-title">
+                            <a href="#">
+                                Eum aliquam error cum facere natus qui dolores nulla
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="aside-article">
+                        <div class="aside-overtitle">
+                            <a href="#" style="color: #1887E4">
+                                <i class="fa-solid fa-square" style="color: #1887E4"></i>
+                                Ut ipsa quaerat est
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #1887E4; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/168" alt=img" class="img-fluid" style="width: 100%">
+
+                        <div class="aside-title">
+                            <a href="#">
+                                Est autem quibusdam aut labore praesentium ex dolore omnis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-lg-4">  <!-- Aside: notizie a destra -->
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="aside-article" style="border-top-color: #9D0000">
+                        <div class="aside-overtitle">
+                            <a href="#">
+                                <i class="fa-solid fa-square"></i>
+                                Aut harum cupiditate
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #9D0000; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/173" alt=img" class="img-fluid" style="width: 100%">
+                        <br>
+                        <div class="aside-title">
+                            <a href="#">
+                                Ut quia vero et consequuntur sint qui quis earum
+                            </a>
+                        </div>
+                    </div>
+                    <div class="aside-article" style="border-top-color: #9D0000">
+                        <div class="aside-overtitle">
+                            <a href="#">
+                                <i class="fa-solid fa-square"></i>
+                                Aut fugiat
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #9D0000; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/311/177" alt=img" class="img-fluid" style="width: 100%">
+                        <br>
+                        <div class="aside-title">
+                            <a href="#">
+                                Eum itaque iusto est quibusdam beatae est rerum accusantium
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="aside-article" style="border-top-color: #9D0000">
+                        <div class="aside-overtitle">
+                            <a href="#">
+                                <i class="fa-solid fa-square"></i>
+                                Eos debitis obcaecati
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-share fa-sm" style="color: #9D0000; "></i>
+                            </a>
+                        </div>
+
+                        <img src="https://picsum.photos/309/177" alt=img" class="img-fluid" style="width: 100%">
+                        <br>
+                        <div class="aside-title">
+                            <a href="#">
+                                Et delectus labore aut eligendi dolor est dolorem error
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-article" style="border-top-color: #9D0000">
+                    <div class="aside-overtitle">
+                        <a href="#">
+                            <i class="fa-solid fa-square"></i>
+                            Ut saepe
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-share fa-sm" style="color: #9D0000; "></i>
+                        </a>
+                    </div>
+
+                    <div class="aside-title">
+                        <a href="#">
+
+                            <img src="https://picsum.photos/108/60" alt=img" style="float: right;">
+                            <p>Ab dolores exercitationem sit aliquid nostrum</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-article" style="border-top-color: #9D0000">
+                    <div class="aside-overtitle">
+                        <a href="#">
+                            <i class="fa-solid fa-square"></i>
+                            Sit soluta
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-share fa-sm" style="color: #9D0000; "></i>
+                        </a>
+                    </div>
+
+                    <div class="aside-title">
+                        <a href="#">
+
+                            <img src="https://picsum.photos/108/61" alt=img" style="float: right;">
+                            <p>Aut necessitatibus facilis non magni </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <!-- Carousel con video-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators" >
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-8 offset-md-2">
+                                            <h2 class="text-center">Video</h2>
+                                            <div class="mt-3">
+                                                <img src="https://picsum.photos/311/350" class="d-block w-100" alt="...">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <p>Et tempore soluta rem accusamus dolores </p>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-8 offset-md-2">
+                                            <h2 class="text-center">Video</h2>
+                                            <div class="mt-3">
+                                                <img src="https://picsum.photos/311/351" class="d-block w-100" alt="...">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <p>Quo dignissimos asperiores sed modi veritatis!</p>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-8 offset-md-2">
+                                            <h2 class="text-center">Video</h2>
+                                            <div class="mt-3">
+                                                <img src="https://picsum.photos/311/352" class="d-block w-100" alt="...">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <p>Non incidunt repellendus nam earum minima et fugit </p>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" >
+                                <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <!-- Box per sondaggio-->
+                    <div class="container-survey">
+                        <div class="container-header-img">
+                            <div class="survey-title">
+                                <a href="#" style="text-decoration: none;">Il sondaggio</a>
+                            </div>
+                            <div class="survey-question ">
+                                Et quia voluptatem hic consequatur autem est galisum fuga?
+                            </div>
+                            <img src="https://picsum.photos/300/170" alt=img" class="img-fluid" style="width: 100%">
+                        </div>
+                        <div class="container-dropdown">
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">VOTA</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#Si">Sì</a>
+                                    <a href="#No">No</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- Carousel di video-->
+        <div class="video-carousel-container">
+            <section class="video-carousel">
+                <div class="container-header-top">
+                    <a href="#LiberoTv"> <img src="icon-liberotv.svg" alt=img" style="width: 130px; height: 35px;"></a>
+                </div>
+
+                <div class="video">
+                        <figure>
+                            <a href="#"> <img src="https://picsum.photos/994/480" alt=img" class="img-fluid" style="width: 100%"></a>
+                        </figure>
+                        <div class="container-play-icon">
+                            <button style="background-color: transparent; border:none">
+                                <img src="play-button-img.png" alt="play-icon" class= "big-play" style="width: 60px; height: 60px">
+                            </button>
+                        </div>
+                        <div class= "title">
+                            <a href="#"  style="text-decoration: none; color: white; "> Sit voluptatibus repudiandae eos illo laboriosam aut magnam expedita aut quisquam enim aut sequi delectus.</a>
+                        </div>
+                </div>
+                <div class="video-wrapper">
+                    <div class="small-video">
+                        <div>
+                            <a href="#"> <img src="https://picsum.photos/230/130" alt=img" class="img-fluid" style="width: 100%"></a>
+                        </div>
+                        <div class="container-small-play-icon">
+                            <button style="background-color: transparent; border:none">
+                                <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                            </button>
+                        </div>
+                        <div class= "aside-title">
+                            <a href="#"  style="text-decoration: none; color: white;"> Hic voluptatem officiis  </a>
+                        </div>
+                    </div>
+                    <div class="small-video">
+                        <div>
+                            <a href="#"> <img src="https://picsum.photos/230/131" alt=img" class="img-fluid" style="width: 100%"></a>
+                        </div>
+                        <div class="container-small-play-icon" >
+                            <button style="background-color: transparent; border:none">
+                                <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                            </button>
+                        </div>
+                        <div class= "aside-title">
+                            <a href="#"  style="text-decoration: none; color: white;">  Aut ratione deserunt vel ipsa  </a>
+                        </div>
+                    </div>
+                    <div class="small-video">
+                        <div>
+                            <a href="#"> <img src="https://picsum.photos/231/130"  alt=img" class="img-fluid" style="width: 100%"></a>
+                        </div>
+                        <div class="container-small-play-icon" >
+                            <button style="background-color: transparent; border:none">
+                                <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                            </button>
+                        </div>
+                        <div class= "aside-title">
+                            <a href="#"  style="text-decoration: none; color: white;"> Qui labore rerum et officia maiores </a>
+                        </div>
+                    </div>
+                    <div class="small-video" style="border-right: none">
+                        <div>
+                            <a href="#"> <img src="https://picsum.photos/231/131" alt=img" class="img-fluid" style="width: 100%"></a>
+                        </div>
+                        <div class="container-small-play-icon" >
+                            <button style="background-color: transparent; border:none">
+                                <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                            </button>
+                        </div>
+                        <div class= "aside-title">
+                            <a href="#"  style="text-decoration: none; color: white;"> Ab eaque odio hic itaque repellendus  </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <a href="#">
+                                        <img src="https://picsum.photos/230/130" alt=img"  style="width: 100%">
+                                    </a>
+                                </div>
+                                <div class="container-play-icon-carousel" >
+                                    <button style="background-color: transparent; border:none">
+                                        <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                                    </button>
+                                </div>
+                                <div class=" swiper-title">
+                                    <a href="#"> Hic voluptatem officiis </a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <a href="#"> <img src="https://picsum.photos/230/131" alt=img" style="width: 100%"></a>
+                                </div>
+                                <div class="container-play-icon-carousel" >
+                                    <button style="background-color: transparent; border:none">
+                                        <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                                    </button>
+                                </div>
+                                <div class= "swiper-title">
+                                    <a href="#" >  Aut ratione deserunt vel ipsa  </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <a href="#"> <img src="https://picsum.photos/231/130"  alt=img"  style="width: 100%"></a>
+                                </div>
+                                <div class="container-play-icon-carousel" >
+                                    <button style="background-color: transparent; border:none">
+                                        <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                                    </button>
+                                </div>
+                                <div class= "swiper-title">
+                                    <a href="#"  style="text-decoration: none; color: white;"> Qui labore rerum et officia maiores </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <a href="#"> <img src="https://picsum.photos/231/131" alt=img" style="width: 100%"></a>
+                                </div>
+                                <div class="container-play-icon-carousel" >
+                                    <button style="background-color: transparent; border:none">
+                                        <img src="play-button-img.png" alt="play-icon" style="width: 35px; height: 35px">
+                                    </button>
+                                </div>
+                                <div class= "swiper-title">
+                                    <a href="#"  style="text-decoration: none; color: white;"> Ab eaque odio hic itaque repellendus  </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Swiper argomenti-->
+
+
+    </div>
+
+
+</div>
+
+
+
+    <!--Footer-->
+    <div class="container-footer">
+        <div style="margin-left: 20px;"> <img src="logo.svg" alt="logo di Libero" style="width: 200px; height: 40px;"></div>
+        <div style="margin-right:20px;">
+            <a href="#" style="color:white"> <i class="fa-brands fa-facebook-f" style="margin-right: 15px"></i> </a>
+            <a href="#" style="color:white"> <i class="fa-brands fa-twitter" style="margin-right: 15px"> </i> </a>
+            <a href="#" style="color:white"> <i class="fa-brands fa-instagram" style="margin-right: 15px"></i> </a>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
