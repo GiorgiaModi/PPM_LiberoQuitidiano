@@ -174,7 +174,7 @@ body{
     background-color: rgb(43, 84, 126);
 }
 
-.   offcanvas-body{
+.offcanvas-body{
     background-color: #e3f2fd;
 }
 
@@ -432,6 +432,14 @@ body{
     text-decoration: none;
 }
 
+.main-article-small{
+    display: flex;
+    border-top: 2px solid black;
+}
+.article-img{
+    padding: 5px 5px 5px 5px;
+}
+
 
 #carousel-mobile-only{
     background-color: white;
@@ -681,19 +689,6 @@ body{
 
 }
 
-/*Style the footer*/
-.container-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(43, 84, 126);
-    height: 80px;
-}
-
-.logo-footer img{
-    width: 200px;
-    height: 40px;
-}
 
 
 /* STyle the swiper "Argomenti" */
@@ -754,7 +749,148 @@ body{
 }
 
 
+/*Style the footer*/
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(43, 84, 126);
+    height: 80px;
+    padding: 12px 14px 23px;
+}
 
+.logo-footer img{
+    width: 160px;
+    height: 25px;
+}
+
+.nav-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-footer1{
+    margin-top: 5px;
+    margin-right:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+
+.nav-footer2{
+    margin-top: 5px;
+    margin-right:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.nav-footer3{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.nav-footer1 a, .nav-footer2 a, .nav-footer3 a{
+    margin-bottom:10px;
+    text-decoration: none;
+    color:white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.additional-links {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 12px;
+}
+
+.additional-links a{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.icon-footer{
+    display: flex;
+}
+
+.container-footer2{
+
+    background-color: rgb(43, 84, 126);
+    border-top: 1px solid whitesmoke;
+    padding: 10px 15px;
+}
+
+.container-footer2 .additional-links{
+    font-size: 15px;
+}
+.container-footer2 .additional-links .link-edicola{
+    margin-right: 20px;
+}
+
+.container-footer3{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 84, 126);
+    border-top: 1px solid whitesmoke;
+    padding-left: 25px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.container-footer3 .nav-footer1, .container-footer3 .nav-footer2, .container-footer3 .nav-footer3{
+    flex-basis: 33%;
+    flex-grow: 1;
+
+}
+
+.container-footer3 .nav-footer1 a, .container-footer3 .nav-footer2 a, .container-footer3 .nav-footer3 a{
+    font-size: 14px;
+}
+
+.container-copyright{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 84, 126);
+    border-top: 1px solid whitesmoke;
+    padding: 20px 20px 20px 25px;
+}
+
+.copyright {
+    color: #ACB8C1;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 80%;
+}
+
+.back-to-top{
+    display: flex;
+
+}
+
+.back-to-top .arrow-icon{
+    padding-right:10px;
+}
+
+.back-to-top a{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /*  PER LA ROBA PER ULTIM'ORA
 .container {
@@ -831,6 +967,8 @@ body{
     }
 }
 
+
+
 @media screen and (max-width: 992px){
     .video-carousel-container {
         margin-top:30px;
@@ -850,6 +988,8 @@ body{
     #carouselExampleIndicators2{
         display: none;
     }
+
+
 }
 
 @media screen and (max-width: 768px){
@@ -893,8 +1033,51 @@ body{
     .video-wrapper{
         display: none;
     }
+
+
 }
 
+@media screen and (max-width: 810px){
+    .container-footer .additional-links{
+        display: none;
+    }
+
+    .container-footer .nav-footer{
+        display: none;
+    }
+
+    .container-footer .icon-footer-xs{
+        display: none;
+    }
+
+    .copyright{
+        flex-basis: 100%;
+    }
+
+    .container-copyright{
+        flex-direction: column;
+    }
+
+    .back-to-top{
+        justify-content: center;
+        padding-top:10px;
+    }
+}
+
+
+@media screen and (min-width: 810px){
+    .container-footer .icon-footer-sm{
+        display: none;
+    }
+
+    .container-footer2{
+        display: none;
+    }
+
+    .container-footer3{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 576px){
     .swiper{
@@ -913,9 +1096,10 @@ body{
 
 
      .logo-footer img{
-         width: 180px;
-         height: 35px;
+         width: 130px;
+         height: 20px;
      }
+
 
 }
 
@@ -949,6 +1133,7 @@ body{
         font-size:11px;
     }
 
+
 }
 
 
@@ -967,6 +1152,11 @@ body{
     #mySwiper2{
         width: 890px;
     }
+
+    .container-footer .additional-links{
+        flex-direction: column;
+    }
+
 }
 
 
@@ -991,7 +1181,9 @@ body{
     #mySwiper2{
         width: 630px;
     }
+
 }
+
 
 
 @media screen and (max-width: 640px){
