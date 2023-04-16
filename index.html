@@ -26,8 +26,7 @@
     <title>My website - Libero</title>
     </head>
 
-<!-- Aggiungi: freccete nei contenuti, la barra sticky, valuta se fare quella cosa con
-Javascript di aprire quella finestra, dai alt alle immagini-->
+
 
 <body>
     <!-- Search bar-->
@@ -732,8 +731,8 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
                             <a href="#"> <img src="https://picsum.photos/994/480" alt=img" class="img-fluid" style="width: 100%"></a>
                         </figure>
                         <div class="container-play-icon">
-                            <button style="background-color: transparent; border:none">
-                                <img src="play-button-img.png" alt="play-icon" class= "big-play" style="width: 60px; height: 60px">
+                            <button class= "big-play" style="background-color: transparent; border:none">
+                                <img src="play-button-img.png" alt="play-icon">
                             </button>
                         </div>
                         <div class= "title">
@@ -794,6 +793,8 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
                         </div>
                     </div>
                 </div>
+
+                <!-- Da md il video wrapper viene sostituito da uno swiper -->
                 <div class="swiper-container">
                     <div class="swiper mySwiper" id="mySwiper1">
                         <div class="swiper-wrapper">
@@ -811,6 +812,7 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
                                 <div class=" swiper-title">
                                     <a href="#"> Hic voluptatem officiis </a>
                                 </div>
+                                <br>
 
                             </div>
                             <div class="swiper-slide">
@@ -825,6 +827,7 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
                                 <div class= "swiper-title">
                                     <a href="#" >  Aut ratione deserunt vel ipsa  </a>
                                 </div>
+                                <br>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-image">
@@ -838,6 +841,7 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
                                 <div class= "swiper-title">
                                     <a href="#"  style="text-decoration: none; color: white;"> Qui labore rerum et officia maiores </a>
                                 </div>
+                                <br>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-image">
@@ -851,6 +855,7 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
                                 <div class= "swiper-title">
                                     <a href="#"  style="text-decoration: none; color: white;"> Ab eaque odio hic itaque repellendus  </a>
                                 </div>
+                                <br>
                             </div>
 
                         </div>
@@ -864,8 +869,8 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
 
         <div class="swiper-container2" id="swiper-container2">
             <header class="swiper_header">
-                <h2 class="swiper_title">
-                    <b>Argomenti </b>
+                <h2 class="title">
+                    <a href="#">Argomenti </a>
                 </h2>
                 <div class="arrows">
                     <button class="swiper-btn-prev " >
@@ -1034,7 +1039,7 @@ Javascript di aprire quella finestra, dai alt alle immagini-->
 
     <!--Footer-->
     <div class="container-footer">
-        <div style="margin-left: 20px;"> <img src="logo.svg" alt="logo di Libero" style="width: 200px; height: 40px;"></div>
+        <div class="logo-footer" style="margin-left: 20px;"> <img src="logo.svg" alt="logo di Libero" ></div>
         <div style="margin-right:20px;">
             <a href="#" style="color:white"> <i class="fa-brands fa-facebook-f" style="margin-right: 15px"></i> </a>
             <a href="#" style="color:white"> <i class="fa-brands fa-twitter" style="margin-right: 15px"> </i> </a>
