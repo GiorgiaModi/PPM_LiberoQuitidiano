@@ -10,7 +10,7 @@ body{
 
 
 
-/*Style the search bar*/
+/*STYLE THE SEARCH BAR*/
 
 .flex-container1 {
     display: flex;
@@ -20,13 +20,11 @@ body{
     height: 30px;
 }
 
-
 .flex-container1 .action-wrapper {
     display: flex;
     align-items: center;
     margin-right:20px;
 }
-
 
 .flex-container1 .search-icon-lg{
     margin-left:20px;
@@ -83,7 +81,6 @@ body{
     font-weight: bold;
 }
 
-
 #search-overlay button[type="submit"] {
     padding: 10px 20px;
     border: none;
@@ -93,7 +90,6 @@ body{
     font-size: 16px;
     margin-left: 10px;
 }
-
 
 #search-close {
     position: absolute;
@@ -111,7 +107,7 @@ body{
 
 
 
-/* Style the header */
+/* STYLE THE HEADER */
 .flex-container2 {
     display: flex;
     background-color: rgb(43, 84, 126);
@@ -122,8 +118,6 @@ body{
     align-items: center;
 }
 
-
-
 .flex-container2 > div {
     text-align: center;
     margin: 10px;
@@ -131,7 +125,10 @@ body{
     font-size: 30px;
 }
 
-/*Style the small navbar*/
+
+
+
+/*STYLE THE COMPRESS NAVBAR */
 
 .flex-container2 .left-nav-logo{
     display: flex;
@@ -170,6 +167,7 @@ body{
 .offcanvas-link{
     display: block;
 }
+
 .offcanvas-link:hover {
     background-color: rgb(84, 159, 234);
 }
@@ -182,7 +180,9 @@ body{
     background-color: #e3f2fd;
 }
 
-/*Style the search bar for mobile only*/
+
+
+/*STYLE THE SEARCH BAR MOBILE ONLY*/
 .search-icon-md{
     display: none;
 }
@@ -233,7 +233,6 @@ body{
     font-weight: bold;
 }
 
-
 #search-overlay1 button[type="submit"] {
     padding: 10px 20px;
     border: none;
@@ -265,7 +264,7 @@ body{
 
 
 
-/* Style the navbar */
+/* STYLE THE NAVBAR */
 .flex-container3{
     display: flex;
     background-color: #e3f2fd;
@@ -337,7 +336,7 @@ body{
 
 
 
-/* Style the content*/
+/* STYLE THE CONTENT*/
 .container-fluid{
     margin: 5px auto 0px;
     max-width: 1024px;
@@ -392,7 +391,6 @@ body{
     text-decoration: none;
 }
 
-
 .subtitle a{
     color: black;
     font-family: inherit;
@@ -438,6 +436,7 @@ body{
     display: flex;
     border-top: 2px solid black;
 }
+
 .article-img{
     padding: 5px 5px 5px 5px;
 }
@@ -448,7 +447,10 @@ body{
     text-align: center;
 }
 
-/*Style the carousel*/
+
+
+
+/*STYLE THE VIDEO CAROUSEL*/
 .carousel{
     background-color: #030303;
     color:white;
@@ -480,7 +482,11 @@ body{
     height: 20px;
 }
 
-/*Style the survey  */
+
+
+
+
+/* STYLE THE SURVEY "SONDAGGIO"  */
 .container-survey{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -568,7 +574,10 @@ body{
 
 
 
-/*Style the big video carousel */
+
+
+
+/*STYLE THE VIDEO WRAPPER "LIBERO TV" */
 .video-carousel-container{
     display: flex;
     flex-direction: column;
@@ -634,9 +643,8 @@ body{
 .small-video-title{
     position: relative;
     z-index: 1;
-    margin-top: 2px; /* adjust as needed */
+    margin-top: 2px;
 }
-
 
 .video-wrapper{
     display: flex;
@@ -644,8 +652,9 @@ body{
     flex-wrap: nowrap;
 }
 
-/* Style the swiper in the video wrapper */
 
+
+/* STYLE THE SWIPER IN THE VIDEO WRAPPER "LIBERO TV" */
 .swiper{
     height:auto;
     width: 500px;
@@ -666,13 +675,13 @@ body{
     --swiper-pagination-bullet-inactive-color: #d7d5d5;
 }
 
-
 .swiper-slide .swiper-image a img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .swiper-image{
     width: 100%;
 }
@@ -682,19 +691,16 @@ body{
     text-decoration: none;
 }
 
-
 .container-play-icon-carousel{
     position: relative;
     bottom: 60px;
     right:75px;
     transform: translate(-50%, 50%);
-
 }
 
 
 
-/* STyle the swiper "Argomenti" */
-
+/* STYLE THE SWIPER "ARGOMENTI"*/
 
 #swiper-container2{
     width: 1000px;
@@ -738,20 +744,21 @@ body{
     object-fit: cover;
 }
 
-
-
-.swiper_art_title {
+.swiper_art_title a{
     font-size: 18px;
+    font-weight: 700;
     font-family: inherit;
     color: black;
-    text-decoration: dashed;
+    text-decoration: none;
     margin-top: 10px;
 
     text-align: center;
 }
 
-/*Style the content wrapper with carousel */
 
+
+
+/*STYLE THE CONTENT WRAPPER WITH CAROUSEL */
 
 .colonna-stile-libero{
     background-color: rgb(43, 84, 126);
@@ -772,7 +779,6 @@ body{
     line-height: 1.11;
     text-decoration: none;
 }
-
 
 #carouselSlidesOnly{
     background-color: rgb(43, 84, 126);
@@ -811,9 +817,11 @@ body{
     text-decoration: none;
     text-align: center;
 }
+
 .carousel-article{
     padding: 20px 15px 48px;
 }
+
 .carousel-article-title a{
     color: white;
     font-family: inherit;
@@ -826,7 +834,8 @@ body{
 
 
 
-/*Style the footer*/
+
+/* STYLE THE FOOTER*/
 .container-footer{
     display: flex;
     align-items: center;
@@ -855,7 +864,6 @@ body{
     align-items: flex-start;
     justify-content: left;
 }
-
 
 .nav-footer2{
     margin-top: 5px;
@@ -969,21 +977,11 @@ body{
     font-weight: bold;
 }
 
-/*  PER LA ROBA PER ULTIM'ORA
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
 
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-*/
 
-/* Classes for js */
+
+
+/* CLASSES FOR JS */
 
 .fc1 {
     display: none;
@@ -1016,29 +1014,6 @@ body{
     display: block;
 }
 
-
-.colonna-arancione{
-    background-color:#FF7E29;
-}
-
-
-.colonna-verde{
-    background-color: green;
-}
-
-
-.colonna-rossa{
-    background-color: red;
-}
-
-.colonna-gialla{
-    background-color: yellow;
-}
-
-.colonna-nera{
-    background-color: black;
-}
-
 .first-title-orange{
     color: #FF7E29;
 }
@@ -1050,19 +1025,7 @@ body{
 
 
 /*MEDIA QUERY */
-/*scompare la barra di navigazione grande */
-@media screen and (max-width: 992px) {
-    .navbar-lg{
-        display:none;
-    }
 
-}
-/*scompare la barra di navigazione pulsante hamburger */
-@media screen and (max-width: 992px) {
-    .flex-container2 .left-nav-logo .nav-bar-sm-md{
-        display: block;
-    }
-}
 
 @media screen and (max-width: 1200px){
     .flex-container3 .liberotv-lg {
@@ -1076,11 +1039,77 @@ body{
     }
 }
 
+@media screen and (max-width: 1024px){
 
+    #swiper-container2 {
+        width:100%;
+    }
 
-@media screen and (max-width: 992px){
+    #mySwiper2{
+        width: 890px;
+    }
+
+    .container-footer .additional-links{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-lg{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .flex-container2 .left-nav-logo .nav-bar-sm-md{
+        display: block;
+    }
+
     .video-carousel-container {
         margin-top:30px;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .container-footer .additional-links{
+        display: none;
+    }
+
+    .container-footer .nav-footer{
+        display: none;
+    }
+
+    .container-footer .icon-footer-xs{
+        display: none;
+    }
+
+    .copyright{
+        flex-basis: 100%;
+    }
+
+    .container-copyright{
+        flex-direction: column;
+    }
+
+    .back-to-top{
+        justify-content: center;
+        padding-top:10px;
+    }
+}
+
+@media screen and (min-width: 810px){
+    .container-footer .icon-footer-sm{
+        display: none;
+    }
+
+    .container-footer2{
+        display: none;
+    }
+
+    .container-footer3{
+        display: none;
     }
 }
 
@@ -1160,48 +1189,6 @@ body{
 
 }
 
-@media screen and (max-width: 810px){
-    .container-footer .additional-links{
-        display: none;
-    }
-
-    .container-footer .nav-footer{
-        display: none;
-    }
-
-    .container-footer .icon-footer-xs{
-        display: none;
-    }
-
-    .copyright{
-        flex-basis: 100%;
-    }
-
-    .container-copyright{
-        flex-direction: column;
-    }
-
-    .back-to-top{
-        justify-content: center;
-        padding-top:10px;
-    }
-}
-
-
-@media screen and (min-width: 810px){
-    .container-footer .icon-footer-sm{
-        display: none;
-    }
-
-    .container-footer2{
-        display: none;
-    }
-
-    .container-footer3{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 576px){
     .swiper{
         width: 430px;
@@ -1225,7 +1212,6 @@ body{
 
 
 }
-
 
 @media screen and (max-width: 465px){
     .swiper{
@@ -1259,29 +1245,11 @@ body{
 
 }
 
-
 @media screen and (max-width: 340px){
     .swiper{
         width: 200px;
     }
 }
-
-@media screen and (max-width: 1024px){
-
-    #swiper-container2 {
-        width:100%;
-    }
-
-    #mySwiper2{
-        width: 890px;
-    }
-
-    .container-footer .additional-links{
-        flex-direction: column;
-    }
-
-}
-
 
 @media screen and (max-width: 900px){
 
@@ -1293,7 +1261,6 @@ body{
         width: 758px;
     }
 }
-
 
 @media screen and (max-width: 768px){
 
@@ -1307,8 +1274,6 @@ body{
 
 }
 
-
-
 @media screen and (max-width: 640px){
 
     #swiper-container2 {
@@ -1320,7 +1285,6 @@ body{
     }
 }
 
-
 @media screen and (max-width: 525px){
 
     #swiper-container2 {
@@ -1331,7 +1295,6 @@ body{
         width: 350px;
     }
 }
-
 
 @media screen and (max-width: 375px){
 
