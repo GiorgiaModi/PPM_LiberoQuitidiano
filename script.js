@@ -151,3 +151,65 @@ var swiper = new Swiper("#mySwiper1", {
         },
     },
 });
+
+
+const myCarousel = document.getElementById('carouselSlidesOnly')
+const title1 = document.getElementById("art_title1")
+const title2 = document.getElementById("art_title2")
+const title3 = document.getElementById("art_title3")
+const title4 = document.getElementById("art_title4")
+const title5 = document.getElementById("art_title5")
+
+myCarousel.addEventListener('slide.bs.carousel', event => {
+
+    var id = event.relatedTarget.id;
+    switch (id) {
+        case "1":
+            title1.classList.add("art-title-orange");
+            title5.classList.remove("art-title-orange");
+            break;
+        case "2":
+            title2.classList.add("art-title-orange");
+            title1.classList.remove("first-title-orange");
+            title1.classList.remove("art-title-orange");
+            break;
+        case "3":
+            title3.classList.add("art-title-orange");
+            title2.classList.remove("art-title-orange");
+            break;
+        case "4":
+            title4.classList.add("art-title-orange");
+            title3.classList.remove("art-title-orange");
+            break;
+        case "5":
+            title5.classList.add("art-title-orange");
+            title4.classList.remove("art-title-orange");
+            break;
+        default:
+        //the id is none of the above
+    }
+
+})
+
+/*
+var title1Carousel = document.getElementById("title1")
+
+if ($('carouselSlidesOnly').carousel(1).hasClass('active')) {
+    title1Carousel.classList.add("colonna-titolo-arancione");
+}
+
+
+
+var colonna = document.getElementById("colonna")
+
+const items = document.querySelectorAll("#carouselSlidesOnly.carousel-item")
+
+for (const index in items){
+    const element = items [index];
+    if (element.classList.contains('active')){
+        colonna.classList.add('colonna-arancione');
+        console.log(index);
+    }
+}
+
+ */

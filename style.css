@@ -10,8 +10,6 @@ body{
 
 
 
-
-
 /*Style the search bar*/
 
 .flex-container1 {
@@ -26,6 +24,12 @@ body{
 .flex-container1 .action-wrapper {
     display: flex;
     align-items: center;
+    margin-right:20px;
+}
+
+
+.flex-container1 .search-icon-lg{
+    margin-left:20px;
 }
 
 #search-button {
@@ -335,10 +339,7 @@ body{
 
 /* Style the content*/
 .container-fluid{
-    margin-top: 5px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
+    margin: 5px auto 0px;
     max-width: 1024px;
 
     padding-bottom: 30px;
@@ -749,6 +750,81 @@ body{
     text-align: center;
 }
 
+/*Style the content wrapper with carousel */
+
+
+.colonna-stile-libero{
+    background-color: rgb(43, 84, 126);
+    display: flex;
+    flex-direction: column;
+}
+
+.art_title{
+
+    border-bottom: 3px solid #B0B0B0;
+    padding: 15px 0px 28px;
+    margin-left:10px;
+    margin-right: 10px;
+    color: #B0B0B0;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.11;
+    text-decoration: none;
+}
+
+
+#carouselSlidesOnly{
+    background-color: rgb(43, 84, 126);
+    padding-left: 0;
+}
+
+.hidden-title{
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.hidden-title a{
+
+    color: #FF7E29;
+    border: none;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.11;
+    text-decoration: none;
+}
+
+.carousel-title{
+    padding-top:15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.carousel-title a{
+    color: white;
+    font-family: inherit;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.11;
+    text-decoration: none;
+    text-align: center;
+}
+.carousel-article{
+    padding: 20px 15px 48px;
+}
+.carousel-article-title a{
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.11;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 
 /*Style the footer*/
 .container-footer{
@@ -941,6 +1017,38 @@ body{
 }
 
 
+.colonna-arancione{
+    background-color:#FF7E29;
+}
+
+
+.colonna-verde{
+    background-color: green;
+}
+
+
+.colonna-rossa{
+    background-color: red;
+}
+
+.colonna-gialla{
+    background-color: yellow;
+}
+
+.colonna-nera{
+    background-color: black;
+}
+
+.first-title-orange{
+    color: #FF7E29;
+}
+
+.art-title-orange{
+    color: #FF7E29;
+}
+
+
+
 /*MEDIA QUERY */
 /*scompare la barra di navigazione grande */
 @media screen and (max-width: 992px) {
@@ -990,6 +1098,17 @@ body{
         display: none;
     }
 
+    .hidden-title{
+        display: none;
+    }
+
+    #next-soloLibero{
+        display: none;
+    }
+
+    #prev-soloLibero{
+        display: none;
+    }
 
 }
 
@@ -1035,6 +1154,9 @@ body{
         display: none;
     }
 
+    #colonna-title-md-lg{
+        display: none;
+    }
 
 }
 
